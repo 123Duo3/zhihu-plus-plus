@@ -878,7 +878,7 @@ fun ArticleScreen(
                             Row(
                                 verticalAlignment = Alignment.CenterVertically,
                                 modifier = Modifier
-                                    .padding(if (expanded) PaddingValues(vertical = 16.dp) else PaddingValues(top = 2.dp, bottom = 8.dp))
+                                    .padding(if (expanded) PaddingValues(top = 48.dp, bottom = 8.dp) else PaddingValues(top = 2.dp, bottom = 8.dp))
                                     .clickable {
                                         navigator.onNavigate(
                                             com.github.zly2006.zhihu.Person(
@@ -1127,7 +1127,7 @@ fun ArticleScreen(
                         .padding(horizontal = 16.dp)
                         .verticalScroll(scrollState)
                         .padding(innerPadding)
-                        .padding(top = 32.dp),
+                        .padding(top = 8.dp),
                 ) {
 
                     @Composable
